@@ -1,0 +1,227 @@
+body{
+  background: #b9bdc0;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px 0px;
+    margin: 0;
+    gap: 15px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+li {
+    position: relative;
+}
+
+.login {
+    margin-left:auto;
+}
+
+/* Links do menu */
+li a, .dropbtn {
+    display: block;
+    color: #ffffff;
+    padding: 13px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.dropbtn {
+    border-radius: 30px;
+}
+
+
+/* Hover */
+li a:hover, .dropdown:hover .dropbtn {
+    background: #CF8E80;
+    border-radius: 8px;
+}
+
+/* Caixa do dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #CF8E80;
+    min-width: 160px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Links dentro do dropdown */
+.dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    color: #ffffff;
+    text-align: left;
+}
+
+/* Hover dos itens do dropdown */
+.dropdown-content a:hover {
+    background:#E2EB98;
+}
+
+/* Mostrar dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.barra{
+    width: 190px;
+    height: 35px;
+    font-family: "Sora", sans-serif;
+    border: 1px solid #E2EB98;
+    outline: none;
+    border-radius: 10px;
+} 
+
+.box1{
+    width: 295px;
+    height: 350px;
+    border: 1px solid #32373B;
+    background-color: #32373B;
+    border-radius: 10px;
+}    
+.imagem1{
+    background-image: url(./imagens/arirang.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 140px;
+
+    border-radius: 10px;
+
+    margin-left: 80px;
+    margin-top: 30px;
+
+}
+.box2{
+    width: 295px;
+    height: 350px;
+    border: 1px solid #32373B;
+    background-color:#32373B;
+    border-radius: 10px;
+}    
+.imagem2{
+    background-image: url(./imagens/tloasg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 140px;
+
+     border-radius: 10px;
+
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+.box3{
+    width: 295px;
+    height: 350px;
+    border: 1px solid#32373B;
+    background-color:#32373B;
+    border-radius: 10px;
+}    
+.imagem3{
+    background-image: url(./imagens/Metallica.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 140px;
+
+     border-radius: 10px;
+
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+.box4{
+    width: 295px;
+    height: 350px;
+    border: 1px solid#32373B;
+    background-color:#32373B;
+    border-radius: 10px;
+}    
+.imagem4{
+    background-image: url(./imagens/thecure.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 140px;
+
+     border-radius: 10px;
+
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* permite rolar pro lado */
+    scroll-snap-type: x mandatory; /* efeito carrossel */
+    padding: 20px;
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none; /* esconde a barra */
+}
+
+.box1, .box2, .box3, .box4 {
+    min-width: 295px; /* IMPORTANTE */
+    scroll-snap-align: start; /* encaixa certinho */
+}
+
+.container{
+    width: 400px;
+    margin: 80px auto;
+    background: #32373B;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+textarea{
+    resize: none;
+    height: 100px;
+}
+
+.banner{
+    height: 790px;
+    width: 100;
+
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 150px;
+    font-size: 45px;
+    color: #6EA4BF;
+    font-weight: bold;
+}
