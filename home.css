@@ -1,3 +1,8 @@
+body{
+  background: #b9bdc0;
+  margin: 0;
+padding: 0;
+}
 /* CABEÇALHO */
 ul {
     display: flex;
@@ -19,11 +24,12 @@ ul {
 /* Itens */
 li {
     position: relative;
+    padding-left: 200px;
 }
 
 /* Empurra pra direita */
 .login {
-    margin-left: auto;
+   padding-left: 200px;
 }
 
 /* LINKS */
@@ -38,11 +44,6 @@ li a,
     font-size: 15px;
 }
 
-/* Botão login */
-.login a {
-    background: #c15598;
-    border-radius: 20px;
-}
 
 /* Hover */
 li a:hover,
@@ -86,4 +87,148 @@ li a:hover,
 .singr a,
 .singer a {
     margin-left: 0;
+}
+.box1{
+    width: 90px;
+    height: 390px;
+    border: 1px solid #32373B;
+    background-color: #32373B;
+    border-radius: 10px;
+}    
+.imagem1{
+    background-image: url(./imagens/arira.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 210px;
+    height: 170px;
+
+    border-radius: 10px;
+
+    margin-left: 50px;
+    margin-top: 30px;
+
+}
+.box2{
+    width: 90px;
+    height: 390px;
+    border: 1px solid #32373B;
+    background-color:#32373B;
+    border-radius: 10px;
+}    
+.imagem2{
+    background-image: url(./imagens/midnights.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 210px;
+    height: 170px;
+
+     border-radius: 10px;
+
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.box3{
+    width: 90px;
+    height: 390px;
+    border: 1px solid#32373B;
+    background-color:#32373B;
+    border-radius: 10px;
+}    
+.imagem3{
+    background-image: url(./imagens/metalllica.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 140px;
+
+     border-radius: 10px;
+
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+.box4{
+    width: 90px;
+    height: 390px;
+    border: 1px solid#32373B;
+    background-color:#32373B;
+    border-radius: 10px;
+}    
+.imagem4{
+    background-image: url(./imagens/thecure.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 140px;
+
+     border-radius: 10px;
+
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* permite rolar pro lado */
+    scroll-snap-type: x mandatory; /* efeito carrossel */
+    padding: 20px;
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none; /* esconde a barra */
+}
+
+.box1, .box2, .box3, .box4 {
+    min-width: 295px; /* IMPORTANTE */
+    scroll-snap-align: start; /* encaixa certinho */
+}
+
+.container{
+    width: 400px;
+    margin: 80px auto;
+    background: #32373B;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+textarea{
+    resize: none;
+    height: 100px;
+}
+
+.banner{
+    height: 790px;
+    width: 100;
+
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 150px;
+    font-size: 45px;
+    color: #6EA4BF;
+    font-weight: bold;
 }
