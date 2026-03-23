@@ -2,8 +2,7 @@ body{
   background: #b9bdc0;
   margin: 0;
 padding: 0;
-}
-/* CABEÇALHO */
+}/* CABEÇALHO */
 ul {
     display: flex;
     align-items: center;
@@ -23,13 +22,12 @@ ul {
 
 /* Itens */
 li {
-    position: relative;
-    padding-left: 200px;
+    position: relative; /* importante pro dropdown */
 }
 
-/* Empurra pra direita */
+/* Empurra login pra direita (FORMA CERTA) */
 .login {
-   padding-left: 200px;
+    margin-left: auto;
 }
 
 /* LINKS */
@@ -44,11 +42,10 @@ li a,
     font-size: 15px;
 }
 
-
 /* Hover */
 li a:hover,
 .dropdown:hover .dropbtn {
-    background: #CF8E80;
+    background: #BF8DAC;
     border-radius: 6px;
     transition: 0.3s;
 }
@@ -57,9 +54,9 @@ li a:hover,
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
-    background: #CF8E80;
+    top: 100%; /* fica exatamente abaixo */
+    left: 0;   /* alinhado com o link */
+    background: #BF8DAC;
     min-width: 150px;
     border-radius: 6px;
     overflow: hidden;
@@ -75,7 +72,7 @@ li a:hover,
 }
 
 .dropdown-content a:hover {
-    background: #EA816F;
+    background: #CAA0BB;
 }
 
 .dropdown:hover .dropdown-content {
@@ -96,16 +93,16 @@ li a:hover,
     border-radius: 10px;
 }    
 .imagem1{
-    background-image: url(./imagens/arira.png);
+    background-image: url(./imagens/arirang.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 210px;
-    height: 170px;
+    width: 230px;
+    height: 180px;
 
     border-radius: 10px;
 
-    margin-left: 50px;
+    margin-left: 30px;
     margin-top: 30px;
 
 }
@@ -117,7 +114,7 @@ li a:hover,
     border-radius: 10px;
 }    
 .imagem2{
-    background-image: url(./imagens/midnights.png);
+    background-image: url(./imagens/minights.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -138,16 +135,16 @@ li a:hover,
     border-radius: 10px;
 }    
 .imagem3{
-    background-image: url(./imagens/metalllica.png);
+    background-image: url(./imagens/beach.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 140px;
-    height: 140px;
+    width: 210px;
+    height: 170px;
 
      border-radius: 10px;
 
-    margin-left: 80px;
+    margin-left: 50px;
     margin-top: 30px;
 }
 
@@ -159,16 +156,37 @@ li a:hover,
     border-radius: 10px;
 }    
 .imagem4{
-    background-image: url(./imagens/thecure.jpg);
+    background-image: url(./imagens/positions.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 140px;
-    height: 140px;
+    width: 230px;
+    height: 170px;
 
      border-radius: 10px;
 
-    margin-left: 80px;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+.box5{
+    width: 90px;
+    height: 390px;
+    border: 1px solid#32373B;
+    background-color:#32373B;
+    border-radius: 10px;
+}    
+.imagem5{
+    background-image: url(./imagens/5sos.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 160px;
+
+     border-radius: 10px;
+
+    margin-left: 25px;
     margin-top: 30px;
 }
 
@@ -183,15 +201,18 @@ li a:hover,
     overflow-x: auto; /* permite rolar pro lado */
     scroll-snap-type: x mandatory; /* efeito carrossel */
     padding: 20px;
+
+    flex-wrap: nowrap;
 }
 
 .carousel-track::-webkit-scrollbar {
     display: none; /* esconde a barra */
 }
 
-.box1, .box2, .box3, .box4 {
+.box1, .box2, .box3, .box4, .box5, .box6{
     min-width: 295px; /* IMPORTANTE */
     scroll-snap-align: start; /* encaixa certinho */
+    flex-shrink: 0;
 }
 
 .container{
@@ -222,13 +243,29 @@ textarea{
 }
 
 .banner{
-    height: 790px;
-    width: 100;
+    background-image: url(./imagens/vinil.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 1000;
+    width: 1885;
+    display: flex;
+    align-items: center; /* centraliza vertical */
+    padding-left: 20px;
 
-    text-align: left;
-    padding-left: 15px;
-    padding-top: 150px;
     font-size: 45px;
-    color: #6EA4BF;
+    color: #8b8e8f;
     font-weight: bold;
+}
+
+a{
+    color: #C596B4;
+}
+
+h4{
+    color: #B8D0EB;
+}
+
+h6{
+    color: #B8D0EB;
 }
