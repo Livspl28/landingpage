@@ -190,6 +190,27 @@ li a:hover,
     margin-top: 30px;
 }
 
+.box6{
+    width: 90px;
+    height: 390px;
+    border: 1px solid#32373B;
+    background-color:#32373B;
+    border-radius: 10px;
+}    
+.imagem6{
+    background-image: url(./imagens/5sos.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 160px;
+
+     border-radius: 10px;
+
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
 .carousel {
     width: 100%;
     overflow: hidden;
