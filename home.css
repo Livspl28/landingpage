@@ -190,6 +190,7 @@ li a:hover,
     min-width: 295px; /* IMPORTANTE */
     scroll-snap-align: start; /* encaixa certinho */
     flex-shrink: 0;
+     box-shadow: 5px 5px 10px rgba(10, 10, 0, 0.3);
 }
 
 .container{
@@ -472,4 +473,78 @@ h6{
 
 .newsletter-form button:hover{
     background-color: #BF8DAC;
+}
+
+/*Caixa de cadastro*/
+.cadbox {
+    width: 500px;
+    height: 750px;
+    background-color: #6EA4BF;
+    padding: 70px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 51%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+    border-radius: 10%;
+}
+
+/*Profile icon*/
+.pfpcad {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 25%;
+    margin-left: 37%;
+    margin-top: -70px;
+}
+
+/*Botão de enviar*/
+button {
+    font-family: "sora", sans-serif;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: -1;
+    margin-top: -200px;
+    width: 130%;
+    height: 45px;
+    text-align: center;
+    background-color: #BF8DAC;
+    color: #BF8DAC;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: -50px;
+}
+
+/*Formulário*/
+.formcad {
+    margin-left: -51px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 125%;
+    height: 100%;
+}
+
+.formcad input {
+    padding: 15px;
+    border: 1px solid #fcfcfc;
+    border-radius: 15px;
+}
+
+.formcad input:focus {
+    border-color:#BF8DAC;
+    outline: none;
+}
+
+.formcad input::placeholder {
+    color: #9e9a9a;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
 }
